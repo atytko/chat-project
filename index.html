@@ -49,8 +49,25 @@
       <div class="update-mssg"></div>
     </form>
   </div>
-  <script src="chat.js"></script>
-  <script src="ui.js"></script>
-  <script src="app.js"></script>
+  <script src="http://cdn.date-fns.org/v1.9.0/date_fns.min.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
+  <script>
+    // Initialize Firebase
+    var firebaseConfig = {
+      apiKey: "AIzaSyCFEeWNNEqp3ZMRObh5xbu1ludi0l6Y77Y",
+      authDomain: "udemy-modern-js-93bbb.firebaseapp.com",
+      databaseURL: "https://udemy-modern-js-93bbb.firebaseio.com",
+      projectId: "udemy-modern-js-93bbb",
+      storageBucket: "udemy-modern-js-93bbb.appspot.com",
+      messagingSenderId: "812562392457",
+      appId: "1:812562392457:web:1318baff2e738f53a9ad58"
+    };
+    firebase.initializeApp(firebaseConfig);
+    const db = firebase.firestore();
+  </script>
+  <script src="scripts/chat.js"></script>
+  <script src="scripts/ui.js"></script>
+  <script src="scripts/app.js"></script>
 </body>
 </html>
